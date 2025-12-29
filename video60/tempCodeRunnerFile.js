@@ -1,0 +1,1 @@
+console.log(a.concat(a,"gaa","krishna"))

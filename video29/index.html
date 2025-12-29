@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design card</title>
+    <style>
+        .parent{
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            position: relative;
+            left: 18px;
+            right: 18px;
+            bottom: 18px;
+            top: 18px;
+            border: 2px solid black;
+            height: 50vh;
+            width: 50vw;
+        }
+        .card{
+          background-color: white;
+          border: 2px solid blue;
+          position: relative;
+          left: 25px;
+          right: 25px;
+          top: 25px;
+          bottom: 25px;
+          height: 40vh;
+          width:40vw ;
+
+        }
+        .photo{
+            /* border: 2px solid black; */
+            outline: 2px solid black;
+            display: flex;  
+            justify-content: center; /* Horizontal center */
+           align-items: center;         
+        }
+        .h2{
+            text-align: center;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="card">
+            <div class="photo">
+                <img src="photo.jpg">
+            </div>
+            <div class="names">
+                <div class="heading">
+                    <h2> Lago di Baries</h2>
+                </div>
+                <div class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident excepturi deserunt, rem alias commodi! Voluptatem quas, obcaecati magnam quasi voluptates fugiat ipsa.</div>
+                <div class="read">Read more</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

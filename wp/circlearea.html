@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of circle</title>
+</head>
+<body>
+    <script>
+        function calfun(){
+        var r=document.getElementById("rad").value;
+        var cirarea=Math.PI*Math.pow(r,2);
+       document.getElementById("area").innerText=cirarea.toFixed(2);
+        }
+    </script>
+    <input type="number" id="rad">
+    <button id="cal" onclick="calfun()">CalArea</button>
+    <p id="area"></p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* spec 10*/
+     .yellow{
+        color: yellow;
+     }
+     /*spec--- 10+1 = 11*/
+     h3.yellow{
+        color: rgb(15, 245, 168);
+     }
+     /* spec 10*/
+     .cred{
+        color: red;
+     }
+     /* spec 10*/
+     .cpurple{
+        color: purple;
+     }
+     /*this is an example of attribute selector,specificity is 1o*/
+     [data-x=a]{
+        color: brown;
+     }
+     /*specificity is 1+10+10+10(href)+10(hover---pseudoclass) = 41*/
+     a.myclass.your-class[href]:hover{
+        color: blueviolet;
+     }
+    </style>
+</head>
+
+<body>
+    <h3 class="yellow cred cpurple" data-x="a">
+        specificity -> inline selector >id selector>class selector> element selector > universal selctor
+        <br> !important overrides even inline
+        <br> attribute selctor ,class selector specificity is 10;universal spec---0;
+        element--1; Id 100; inline 1000
+    </h3>
+</body>
+</html>

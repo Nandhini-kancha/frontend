@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Form</title>
+</head>
+
+<body>
+<script>
+    function validate(){
+    var name=document.getElementById("name").value;
+    var number=document.getElementById("number").value;
+    var email=document.getElementById("email").value;
+    var error=document.getElementById("error");
+    if(name===""||number===""||email===""){
+        error.innerHTML="please fill the details";
+        return false;
+    }
+    // alert(error);
+}
+</script>
+
+    <form onsubmit="return validate()">
+        Enter Name:<input type="text" id="name"><br>
+        Enter Number:<input type="text" id="number"><br>
+        Enter email:<input type="text" id="email"><br>
+        <p id="error" ></p><br>
+        <button id="submit" onclick="validate()">Submit</button>
+    </form>
+</body>
+</html>

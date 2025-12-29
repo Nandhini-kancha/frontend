@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling</title>
+</head>
+<body>
+    <div class="container">
+<div class="childcontainer">
+    <div class="child">
+        Im child
+    </div>
+</div>    
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click",()=>{
+            e.stopPropagation()//to stop event bubbling
+            alert("child was clicked")
+        })
+        document.querySelector(".childcontainer").addEventListener("click",()=>{
+            alert("childcontainer was clicked")
+        })
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("container was clicked")
+        })
+    </script>
+</body>
+</html>

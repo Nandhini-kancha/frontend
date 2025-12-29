@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArraySum</title>
+</head>
+<body>
+    <script>
+    var row=Number(prompt("enter rows"));
+    var cols=Number(prompt("enter the cols"));
+    var mat=[];var sum=0;
+    for(var i=0;i<row;i++){
+        mat[i]=[];
+        for(var j=0;j<cols;j++){
+          var value=Number(prompt("enter value"));
+          mat[i][j]=value;
+          sum+=value;
+        }
+    }
+    for(var i=0;i<row;i++){
+        document.write(mat[i].join(""));
+    }
+    document.write("sum="+sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rand=Math.random()
+        let first,second,third;
+        if(rand<0.33){
+            first="crazy"
+        }
+        else if(rand<0.66&&rand>=0.33){
+            first="amazing"
+        }
+        else {
+            first="fire"
+        }
+        //let generate 2nd word
+        if(rand<0.33){
+            second="Engine"
+        }
+        else if(rand<0.66&&rand>=0.33){
+            second="foods"
+        }
+        else {
+            second="garments"
+        }
+        if(rand<0.33){
+        third="limited"
+        }
+        else if(rand<0.66&&rand>=0.33){
+            third="hub"
+        }
+        else {
+            third="bros"
+        }
+        console.log(`${first} ${second} ${third}`)
+    </script>
+</body>
+</html>

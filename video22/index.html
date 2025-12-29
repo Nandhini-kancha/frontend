@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border:2px solid black;
+           /* width: 2048px;/* 2048px is the total width*/
+           width: 80vw;
+           margin:auto ;
+           height: 10vh;
+            background-color: aqua;
+        }
+        html{
+            font-size: 2rem;
+        }
+        .container{
+              box-sizing: border-box;
+              border: 2px solid black;
+              width: 80vw;
+              height: 80vh;
+              margin: 23px auto;
+              font-size:46px;
+              background-color: aquamarine;
+        }
+        container p{
+            font-size: 2em;
+        }
+        .mycontainer{
+            box-sizing: border-box;
+            margin: 23px auto;
+            background-color: rgb(244, 161, 161);
+            color: red;
+            border: 2px solid black;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> this is a box</div>
+    <div class="container">
+        <p> hii this is paara</p>
+    </div>
+    <div class="mycontainer">Im another container</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOre on css selectors</title>
+    <style>
+/* .box:first-child{
+background-color: yellow;
+} */
+/* .box::first-line{
+    color: red;
+} */
+ /* .boxes *{
+  color: blue;
+  border: 2px solid rgb(243, 10, 10);
+ }
+ [data-color="primary"]{  /*attribute
+    padding-top: 45px;
+ } */
+  /* .box:nth-child(odd){
+    background-color: blue;
+  } */
+   /* .box:nth-last-child(1){
+    background-color: red;
+   } */
+    .boxes::before{
+        content:"Govinda Govinda..";
+    }
+    .boxes::after{
+        content:"Govinda Govinda..";
+        color: red;
+    }
+    /* befor and after helps to add dynamic input */
+    ::selection{
+        background-color: pink;
+         color: aqua;
+    }
+    .box::first-letter{
+        color: peru;
+        font: 30px;
+    }
+    input::placeholder{
+        color:rgb(1, 1, 14);
+    }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Im first box</div>
+        <div class="box">Hey Im a box</div>
+        <div class="box">Hey Im a box</div>
+        <input type="text" placeholder="enter your name">
+    </div>
+</body>
+</html>
